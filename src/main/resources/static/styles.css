@@ -1,0 +1,349 @@
+@font-face {
+  font-family: "Instrument Serif";
+  src: url(fonts/InstrumentSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter-VariableFont_opsz,wght.ttf);
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url(fonts/GeistMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url(fonts/InstrumentSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter-VariableFont_opsz,wght.ttf);
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url(fonts/GeistMono-Regular.ttf);
+}
+
+:root {
+  --color-foundation-paper: #ffffff;
+  --color-foundation-canvas: #f5f8fd;
+  --color-foundation-line: #e2e8f2;
+  --color-foundation-line-strong: #cbd5e5;
+  --color-foundation-blue-700: #102e7a;
+  --color-foundation-blue-600: #1b47d6;
+  --color-foundation-danger: #b42318;
+  --color-text-ink: #0a1428;
+  --color-text-ink-soft: #33415c;
+  --color-text-muted: #64738b;
+  --px-control: 2.4rem;
+  --px-field: 4.8rem;
+  --px-radius: 0.8rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0;
+  padding: 6rem 10rem;
+  background-color: var(--color-foundation-canvas);
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto 2rem auto;
+  text-align: left;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.8rem;
+  max-width: 80rem;
+  width: 100%;
+  min-height: 70rem;
+  border: 0.1rem solid transparent;
+  border-radius: var(--px-radius);
+  padding: 4rem 3rem;
+  background-color: var(--color-foundation-paper);
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.div-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-title div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 2rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.inherit-btn {
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.div-editor {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.div-editor > .metadata {
+  margin-right: 1.6rem;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid var(--color-foundation-line);
+}
+
+.line-strong {
+  border: none;
+  margin-top: 2rem;
+  border-top: 1px solid var(--color-foundation-line-strong);
+}
+
+.display {
+  font:
+    4.6rem/5.2rem "Instrument Serif",
+    sans-serif;
+}
+
+.wordmark {
+  font:
+    600 3rem/3rem "Inter",
+    sans-serif;
+}
+
+.section-title {
+  font:
+    600 2.6rem/3.2rem "Inter",
+    sans-serif;
+  color: var(--color-text-ink);
+}
+
+.wordmark .dot {
+  color: var(--color-foundation-blue-600);
+}
+
+.row-title {
+  font:
+    500 1.6rem/2.2rem "Inter",
+    sans-serif;
+    width: 60%;
+}
+
+.row-title:hover {
+  color: var(--color-foundation-blue-600);
+}
+
+.body {
+  font:
+    400 1.7rem/2.8rem "Inter",
+    sans-serif;
+  color: var(--color-text-ink-soft);
+  white-space: pre-wrap;
+}
+
+.field-value {
+  font:
+    400 1.5rem/2rem "Inter",
+    sans-serif;
+}
+
+.metadata {
+  font:
+    1.2rem/1.6rem "Geist Mono",
+    sans-serif;
+  color: var(--color-text-muted);
+}
+
+.link {
+  font:
+    1.2rem/1.6rem "Inter",
+    sans-serif;
+  color: var(--color-text-ink-soft);
+}
+
+.label-text {
+  font:
+    1.2rem/1rem "Inter",
+    sans-serif;
+  color: var(--color-text-ink);
+  padding-bottom: 0.4rem;
+}
+
+.action:hover {
+  color: var(--color-foundation-blue-600);
+}
+
+.reaction:hover {
+  color: var(--color-foundation-blue-700);
+}
+
+.danger:hover {
+  color: var(--color-foundation-danger);
+}
+
+.editor {
+  font:
+    1.3rem/1rem "Inter",
+    sans-serif;
+  cursor: pointer;
+}
+
+.edit {
+  color: var(--color-foundation-blue-600);
+}
+
+.delete {
+  color: var(--color-text-muted);
+}
+
+.article-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.article-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.article-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.new {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+.article-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+  min-height: 0;
+}
+
+.article-form input,
+.article-form textarea {
+  margin-bottom: 2rem;
+}
+
+.form-action {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  height: 4.4rem;
+  padding: 0 2rem;
+  border: 0.1rem solid transparent;
+  border-radius: var(--px-radius);
+  font:
+    500 1.4rem/1 "Inter",
+    sans-serif;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--color-foundation-blue-600);
+  color: var(--color-foundation-paper);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-foundation-blue-700);
+  color: var(--color-foundation-paper);
+  border-color: var(--color-foundation-blue-700);
+}
+
+.btn--secondary {
+  background-color: var(--color-foundation-paper);
+  color: var(--color-text-ink);
+  border-color: var(--color-foundation-line-strong);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-foundation-danger);
+  color: var(--color-foundation-paper);
+  border-color: var(--color-foundation-danger);
+}
+
+.input {
+  height: var(--px-field);
+  width: 100%;
+  padding: 0 2rem;
+  border: 0.1rem solid transparent;
+  border-radius: var(--px-radius);
+  border-color: var(--color-foundation-line-strong);
+}
+
+input:focus {
+  outline: none;
+}
+
+input:focus-visible {
+  outline: 1px solid var(--color-foundation-blue-600);
+  outline-offset: 2px;
+  border: none;
+}
+
+.input-textarea {
+  flex: 1;
+  resize: none;
+  height: max-content;
+  min-height: 12rem;
+  padding: 1.5rem 2rem;
+  overflow: auto;
+}

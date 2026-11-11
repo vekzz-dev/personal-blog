@@ -1,0 +1,50 @@
+/* Reset box-sizing para todos */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Quitar márgenes y paddings por defecto */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Mejor comportamiento del body */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Imágenes y medios responsivos */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Formularios heredan tipografía */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Evitar overflow de texto largo */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Listas sin viñetas (opcional) */
+ul, ol {
+  list-style: none;
+}
+
+/* Enlaces sin estilos por defecto */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Títulos sin tamaños raros */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
