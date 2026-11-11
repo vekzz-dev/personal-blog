@@ -1,0 +1,15 @@
+target/
+.git/
+.gitignore
+.idea/
+.vscode/
+.atl/
+.odd/
+.mvn/
+jte-classes/
+*.iml
+config.env
+.env
+config.env.example
+README.md
+src/main/resources/templates/html/
